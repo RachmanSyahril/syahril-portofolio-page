@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+    @apply dark:bg-[#0F1117] dark:text-gray-100;
+    @apply transition-colors duration-200;
+  }
+
+  ::selection {
+    @apply bg-teal/20;
+    @apply dark:bg-teal/30;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

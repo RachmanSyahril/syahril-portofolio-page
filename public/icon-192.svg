@@ -1,0 +1,7 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="96" cy="96" r="96" fill="#1D9E75"/>
+  
+  <!-- Initials SR -->
+  <text x="96" y="132" font-family="Inter, sans-serif" font-size="96" font-weight="600" fill="white" text-anchor="middle">SR</text>
+</svg>
