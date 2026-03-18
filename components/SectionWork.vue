@@ -82,7 +82,7 @@ function setFilter(filter: FilterOption) {
       <!-- Timeline -->
       <div class="space-y-8">
         <div
-          v-for="project in filteredProjects"
+          v-for="(project, index) in filteredProjects"
           :key="project.id"
           class="flex gap-4 sm:gap-6 transition-all duration-300"
           :class="[
@@ -91,7 +91,7 @@ function setFilter(filter: FilterOption) {
           ]"
         >
           <!-- Year & Dot -->
-          <div class="flex flex-col items-end pt-1">
+          <div class="hidden sm:flex flex-col items-end pt-1">
             <span class="text-[11px] text-[#666666] dark:text-[#9CA3AF] w-14 text-right">
               {{ project.yearEnd ? `${project.year}–${project.yearEnd}` : project.year }}
             </span>
@@ -106,12 +106,18 @@ function setFilter(filter: FilterOption) {
           </div>
 
           <!-- Vertical Line -->
-          <div class="w-px bg-[#E5E7EB] dark:bg-[#2A2D3A] self-stretch -mt-2 -mb-4"></div>
+          <div class="hidden sm:block w-px bg-[#E5E7EB] dark:bg-[#2A2D3A] self-stretch -mt-2 -mb-4"></div>
 
           <!-- Project Card -->
           <div class="flex-1 min-w-0 -mt-3">
             <ProjectCard :project="project" />
           </div>
+
+          <!-- Mobile Divider -->
+        <div
+          v-if="index < filteredProjects.length - 1"
+          class="sm:hidden border-t border-[#E5E7EB] dark:border-[#2A2D3A] mt-6"
+        ></div>
         </div>
       </div>
     </div>

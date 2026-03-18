@@ -25,7 +25,7 @@ export const projects: Project[] = [
     type: 'freelance',
     description: 'Online Information Portal System untuk Komisi Penyiaran Indonesia Nasional, dilengkapi interactive charts, admin dashboard, dan dynamic data forms.',
     techStack: ['Vue.js', 'Nuxt.js', 'Vuex', 'ECharts', 'ChartJs'],
-    images: ['/projects/smiled-kpi/01-portal.png', '/projects/smiled-kpi/02-charts.png'],
+    images: ['/projects/smiled-kpi/1.png', '/projects/smiled-kpi/2.png', '/projects/smiled-kpi/3.png', '/projects/smiled-kpi/4.png', '/projects/smiled-kpi/5.png', '/projects/smiled-kpi/6.png', '/projects/smiled-kpi/7.png', '/projects/smiled-kpi/8.png'],
     liveUrls: [{ label: 'smiled.kpi.go.id', url: 'https://smiled.kpi.go.id' }],
     featured: true,
   },

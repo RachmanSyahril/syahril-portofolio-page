@@ -69,7 +69,7 @@ function handleSwipe() {
         :key="image"
         :src="image"
         :alt="`${projectTitle} - Image ${index + 1}`"
-        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+        class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300"
         :class="{ 'opacity-100': index === currentIndex, 'opacity-0': index !== currentIndex }"
         loading="lazy"
       />
@@ -90,7 +90,7 @@ function handleSwipe() {
     <button
       v-if="hasMultipleImages"
       @click="prevSlide"
-      class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/90 dark:bg-[#1A1D27]/90 rounded-full shadow-sm opacity-0 transition-opacity duration-200"
+      class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/90 dark:bg-[#1A1D27]/90 rounded-full shadow-sm opacity-0 transition-opacity duration-200 text-[#666666] dark:text-[#9CA3AF]"
       :class="{ 'opacity-100': isHovering }"
       aria-label="Previous image"
     >
@@ -102,7 +102,7 @@ function handleSwipe() {
     <button
       v-if="hasMultipleImages"
       @click="nextSlide"
-      class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/90 dark:bg-[#1A1D27]/90 rounded-full shadow-sm opacity-0 transition-opacity duration-200"
+      class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white/90 dark:bg-[#1A1D27]/90 rounded-full shadow-sm opacity-0 transition-opacity duration-200 text-[#666666] dark:text-[#9CA3AF]"
       :class="{ 'opacity-100': isHovering }"
       aria-label="Next image"
     >

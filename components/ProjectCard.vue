@@ -36,7 +36,7 @@ function getYearDisplay() {
     <!-- Minimal Card -->
     <div
       @click="openModal"
-      class="group border border-[#E5E7EB] dark:border-[#2A2D3A] rounded-xl p-5 cursor-pointer transition-all duration-200 hover:border-teal hover:shadow-lg hover:bg-[#F8F9FA] dark:hover:bg-[#1A1D27]"
+      class="group border border-[#E5E7EB] dark:border-[#2A2D3A] rounded-xl p-5 cursor-pointer transition-all duration-200 hover:border-teal dark:hover:border-teal hover:shadow-lg dark:hover:shadow-lg hover:bg-[#F8F9FA] dark:hover:bg-[#1A1D27]"
     >
       <div class="flex items-start justify-between gap-4">
         <div class="flex-1 min-w-0">
@@ -189,7 +189,7 @@ function getYearDisplay() {
               </div>
               <button
                 @click="closeModal"
-                class="p-2 rounded-lg hover:bg-[#F8F9FA] dark:hover:bg-[#2A2D3A] transition-colors"
+                class="p-2 rounded-lg text-[#666666] dark:text-[#9CA3AF] hover:bg-[#F8F9FA] dark:hover:bg-[#2A2D3A] transition-colors"
               >
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
