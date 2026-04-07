@@ -5,6 +5,7 @@
       <SectionHero />
       <SectionWork />
       <SectionSkills />
+      <SectionRecommendations />
       <SectionAbout />
       <SectionContact />
     </main>

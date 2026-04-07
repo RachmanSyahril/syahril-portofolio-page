@@ -34,7 +34,7 @@ async function typeText() {
 const stats = [
   { value: '12+', label: 'Projects shipped' },
   { value: '5+', label: 'Years exp.' },
-  { value: '1000+', label: 'IoT devices tracked' },
+  { value: '3', label: 'Recommendations' },
   { value: '1', label: 'Active freelance' },
 ]
 

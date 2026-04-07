@@ -11,6 +11,7 @@ const isMobileMenuOpen = ref(false)
 const navLinks = [
   { label: 'Work', href: '#work' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Recommendations', href: '#recommendations' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ]
