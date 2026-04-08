@@ -2,9 +2,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const recommendations = [
-  '/recommendations/1.png',
-  '/recommendations/2.png',
-  '/recommendations/3.png',
+  'recommendations/1.png',
+  'recommendations/2.png',
+  'recommendations/3.png',
 ]
 
 const currentIndex = ref(0)
